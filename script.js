@@ -47,9 +47,3 @@ cityInput.addEventListener("keydown", function (event) {
 clear.addEventListener("click", () => {
     container.innerHTML = "";
 })
-
-clear.addEventListener("keydown", (e) => {
-    if (e.key == "Escape") {
-        container.innerHTML = "";
-    }
-})
