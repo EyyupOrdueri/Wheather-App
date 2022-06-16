@@ -35,12 +35,23 @@ input, button {
     background-color: blue;
     color: white;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 #clear {
     background-color: gray;
     color: white;
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+#search:hover {
+    opacity: 0.6;
+}
+
+#clear:hover {
+    background-color: rgb(61, 59, 59);
+    opacity: 0.6;
 }
 
 main {

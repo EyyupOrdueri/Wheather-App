@@ -4,8 +4,13 @@ const cityInput = document.querySelector("input");
 const container = document.querySelector(".container");
 
 const getWeatherInfo = async () => {
-    if (container.innerHTML.toLowerCase().includes(cityInput.value.toLowerCase())) {
+
+    if (cityInput.value === "") {
+        alert("You did not enter a city name. Please try again.")
+    }
+    else if (container.innerHTML.toLowerCase().includes(cityInput.value.toLowerCase())) {
         alert(cityInput.value + " is already exists")
+        cityInput.value = ""
     }
     else {
         const key = "b75138e87a3370f1e5a18a08eeb235c3";
